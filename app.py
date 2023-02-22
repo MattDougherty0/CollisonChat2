@@ -3,7 +3,7 @@ import streamlit as st
 from gpt_index import GPTSimpleVectorIndex
 
 # Load the index from disk
-index = GPTSimpleVectorIndex.load_from_disk('index-4.json')
+index = GPTSimpleVectorIndex.load_from_disk('index.json')
 
 # Define the app layout
 st.title('GPT Search')
