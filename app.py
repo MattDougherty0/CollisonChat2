@@ -3,8 +3,9 @@ import streamlit as st
 from gpt_index import GPTSimpleVectorIndex
 import os
 
-OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
-
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+   
 # Load the index from disk
 index = GPTSimpleVectorIndex.load_from_disk('index.json')
 
